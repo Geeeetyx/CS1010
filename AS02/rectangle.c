@@ -34,7 +34,7 @@ void draw_rectangle(long w, long h) {
         } 
         cs1010_println_string(TOP_RIGHT);
 
-        //print the body (in between first and last row
+        //print the body (in between first and last row)
         long v_count = h - 2; //number of vertical lines
         long space_count = w - 2;
         for (v_count = h - 2; v_count > 0; v_count -= 1) {
@@ -52,7 +52,6 @@ void draw_rectangle(long w, long h) {
         }
         cs1010_println_string(BOTTOM_RIGHT);
     }
-
 }
 
 int main()
@@ -62,8 +61,7 @@ int main()
 
     if ((w < 2) || (h < 0)) {
         cs1010_println_string("Width and height are at least 2");
-        return 0;
+        return -1;
     }
-
     draw_rectangle(w,h);
 }
