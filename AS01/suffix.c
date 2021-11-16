@@ -9,8 +9,6 @@
  */
 #include "cs1010.h"
 
-
-
 void print_with_suffix(long n) {
 	cs1010_print_long(n);	       // print out the integer
 	if (n < 10) { 		       // when the number is less thatn 10
@@ -42,7 +40,6 @@ void print_with_suffix(long n) {
 		}
 	}
 }
-
 
 int main() 
 {
